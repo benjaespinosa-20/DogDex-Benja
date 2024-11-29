@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.dogdexbenja"
-    compileSdk = 33
+    compileSdk = 32
 
     defaultConfig {
         applicationId = "com.example.dogdexbenja"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 32
         versionCode = 1
         versionName = "1.0"
 
@@ -32,6 +32,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+    buildFeatures {
+        dataBinding = true
     }
 }
 
