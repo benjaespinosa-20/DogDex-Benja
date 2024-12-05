@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.dogdexbenja"
-    compileSdk = 32
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.dogdexbenja"
         minSdk = 24
-        targetSdk = 32
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -47,4 +47,12 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    //Retrofit and Moshi
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+
+    // Coroutines
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
+    implementation("androidx.activity:activity-ktx:1.4.0")
 }
